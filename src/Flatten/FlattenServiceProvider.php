@@ -23,7 +23,7 @@ class FlattenServiceProvider extends ServiceProvider
 		$this->bindCoreClasses();
 
 		// Regisger package
-		$this->app['config']->package('anahkiasen/flatten', __DIR__.'/../config');
+		// $this->app['config']->package('anahkiasen/flatten', __DIR__.'/../config');
 		$this->bindFlattenClasses();
 
 		if ($this->app->bound('artisan')) {
